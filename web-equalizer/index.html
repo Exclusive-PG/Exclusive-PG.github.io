@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main-styles/style.css" />
+    <link rel="stylesheet" href="fonts/cssfonts/all.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section >
+  <div  class="wrapper_audio">  
+           <!-- equlaizer mode 1 -->
+      <div class="audio" id="audioBlock">
+
+      </div>
+           <!-- buttons-control-audio files -->
+      <div class="buttons-control" id="buttons-control"></div>
+      <div id="field-song">
+        <p id="name-song"></p>
+      </div>
+           <!-- upload files-->
+      <div class="input-file">
+        <input type="file" id="loadFile" accept="audio/*" multiple />
+        <label id="file" for="loadFile"> <i class="fas fa-cloud-upload-alt"></i>  Choose files</label>
+      </div>
+           <!--off/on Settings -->
+      <div class="btn-settings-control" id="btn-settings">
+        <i class="far fa-arrow-alt-circle-right"></i>
+      </div>
+      <!-- Settings -->
+      <aside class="settings-menu" id = "set-menu">
+        <div class="list-items">
+          <div class="items-first">
+            <input type="checkbox" id="show-element" />
+            <div class="show-element">Hide Controls</div>
+          </div>
+          <div class="items-second">
+            <span id="volume-music"><i class="fas fa-volume-up"></i></span><input id="volume" type="range" />
+          </div>
+          <div class="items-third" id = "item-3">
+            </i><input id="duration-song" type="range" />
+            <div id="cur"></div>
+            <div id="dur"></div>
+          </div>
+          <div class="items-fourth" id = "item-4">
+              <div class="playlist-songs" id = "btn-playlist-songs">PlayList</div>
+           
+          </div>
+        </div>
+      </aside>
+    </div>       
+    </section>
+    
+<section class = "parallax-fone">
+  <div data-speed-parallax = "10" class="background-audio"></div>
+</section>
+<section id="playlist-panel">
+  <div class="btn-close" id = "btn-close-playlist"><i class="fas fa-chevron-up fa-2x"></i></div>
+  <div class="count-tracks"></div>
+  <div class="playlist" id = "playlist-field">
+    <div id="playlist-names"></div>
+  </div>
+</section>
+<section id = "loader">
+  <div class="loader">
+    <!-- <svg class="progress-bar" width = "120" height = "120">
+      <circle class="progress-bar-circle" stroke = "#0054F0" stroke-width ="6"
+      cx = "60" cy = "60" r = "48" fill = "###"/>
+    </svg>  -->
+    <div class="circle-loader"></div>
+  </div>
+</section>
+<section class="error">
+  <div class="erro-pop__up">
+    <div id="txt-error">Слишком много файлов</div>
+    <div id="description">Загружено 0/0</div>
+  </div>
+</section>
+<!-- <section id= "container-canvas">
+  <canvas id="canvas"></canvas>
+</section> -->
+    <script type="module" src="./scripts/web-audio-api.js"></script>
+    <script  src="./scripts/settings.js"></script>
+    <script src="./scripts/effects/parallax.js"></script>
+    <script src="./scripts/error/error.js"></script>
+  </body>
+</html>
