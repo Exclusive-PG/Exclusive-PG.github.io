@@ -1,0 +1,225 @@
+@import "./main";
+
+
+
+
+.main_slide_view{
+     //  background-image: url("./../images/mainBanner.jpg");
+       width: 100%;
+       max-width: 453px;
+       min-height: auto;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       background-color: #f3f3f3;
+       min-height: 320px;
+}
+
+.section_preview_product ,.section_hot_new_products_view,.section_special_new_products_view{
+    background-color: #f3f3f3;
+}
+
+.slider_block_view{
+    margin-top: 40px;
+    max-width: 475px;
+    width: 100%;
+}
+
+.flex_block_slider_view{
+    padding: 35px 0;
+    display: flex;
+}
+.block{
+    width: 100%;
+    max-width: 100px;
+    min-height: 70px;
+    background-color: #f3f3f3;
+    margin-right: 25px;
+    background-image: url("./../images/videocard6.jpg");
+  
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+
+.block__inner_preview_product{
+    @include MainContainer();
+    background-color: #fff; 
+}
+.main_slide_view{
+    position: relative;
+    background-image: url("./../images/videocard5.jpg");
+  
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.arrow_left_view{
+    position: absolute;
+    top: 50%;
+    left: -7%;
+}
+.arrow_right_view{
+    position: absolute;
+    top: 50%;
+    left: 103%;
+}
+.block__inner_preview_product{
+    display: flex;
+}
+
+.main_title_view{
+    
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.main_subtitle_view{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .1px;
+    line-height: 35px;
+}
+.zone_buttons_view{
+    margin-top: 90px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 70px;
+
+    button{
+        border-radius: 20px;
+    }
+}
+.detail_view{
+    padding: 0 70px;
+}
+.or{
+    margin: 0 50px;
+}
+
+.hot_deals_block{
+   
+    margin-top: 55px;
+}
+.block_banner{
+    max-width: 400px;
+    width: 100%;
+    min-height: auto;
+    max-height: 210px;
+    background-image: url("./../images/videocard4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        .title_block_banner{
+            top: 50%;
+        }
+}
+}
+.block_banner_view{
+    max-width: 800px;
+    width: 100%;
+    margin: 80px 50px;
+    display: flex;
+   
+}
+
+.mr_block{
+    margin-right: 50px;
+}
+
+
+.block_banner_view_long{
+    max-width: 800px;
+    width: 100%;
+    margin: 80px 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.block_banner_long{
+    
+    width: 100%;
+    height: 100%;
+
+    min-height: 210px;
+    height: 100%;
+    background-image: url("./../images/rekl_banner.png");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+
+        .title_banner_long{
+
+            width: 100%;
+            right: 0;
+        }
+
+
+    }
+}
+
+.title_banner_long{
+    transition: 1s all;
+    position: absolute;
+    background-color: rgba($color: #dc3545, $alpha: .7);
+    right: -100%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    flex-direction: column-reverse;
+}
+
+.text_banner_long{
+    transition: .3s all;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background-color: #dc3545;
+    &:hover{
+        transform: scale(1.2);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.block_view_hot_deals{
+    max-height: 350px;
+}
+.title_block_banner{
+    transition: 1s all;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba($color: #dc3545, $alpha: .7);
+    width: 100%;
+    height: 100%;
+}
+.pt_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_block_product_view{
+    margin-left: 135px;
+    margin-top: 30px;
+    text-align: center;
+}
