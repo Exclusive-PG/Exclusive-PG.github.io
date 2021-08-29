@@ -1,0 +1,19 @@
+{
+  "name": "slider-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exclusive-PG/slider-js.git"
+  },
+  "author": "Dmitry Ilchenko <daymerexc@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Exclusive-PG/slider-js/issues"
+  },
+  "homepage": "https://github.com/Exclusive-PG/slider-js#readme"
+}
