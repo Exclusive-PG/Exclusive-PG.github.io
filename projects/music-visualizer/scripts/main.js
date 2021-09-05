@@ -57,12 +57,12 @@ const createAudioContext = () =>{
 
 
 let itemSongs = {
-   src:"./../tracks/Neizvestnyjj_-_Tokijjskijj_gul_4_sezon_opening_59690834.mp3",
+   src:"https://exclusive-pg.github.io/projects/music-visualizer/tracks/Neizvestnyjj_-_Tokijjskijj_gul_4_sezon_opening_59690834.mp3",
    name:"Tokyo Goul",
    artist : "unravel"
 }
 let itemSongs1 = {
-   src:"./../tracks/Alessia_Cara_-_Here_Lucian_Remix_62940245.mp3",
+   src:"https://exclusive-pg.github.io/projects/music-visualizer/tracks/Alessia_Cara_-_Here_Lucian_Remix_62940245.mp3",
    name:"Here",
    artist : ""
 }
