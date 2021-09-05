@@ -104,7 +104,7 @@ window.addEventListener("load",()=>{
    canvas.height = window.innerHeight
    ctx = canvas.getContext('2d')
    audio = new Audio();
-
+   audio.crossOrigin = "anonymous";
    
    controllers.playOrPause(document.querySelector(".playOrPause"),songs,"Enter");
   

@@ -13,6 +13,7 @@ settingsPlayer = new SettingsPlayer();
  _modePlay = null;
 _InitAudioContext = null;
 _audio = null;
+
 MAX_VALUE_VOLUME = 1; 
 MIN_VALUE_VOLUME = 0;
     Init(modePlay,initAudioContext,audio){
