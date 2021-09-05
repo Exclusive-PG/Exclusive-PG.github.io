@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1000px;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0 10px;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.item {
+ 
+  width:150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+
+  cursor: grab;
+  animation: slow .5s  forwards;
+  
+}
+
+.items-row{
+  display: flex;
+  min-height: 600px;
+  max-height: 600px;
+  height: 100%;
+  overflow-y:scroll;
+}
+.items-row::-webkit-scrollbar {
+  width: 10px
+}
+.items-row::-webkit-scrollbar-track {
+  background: #F9F9F9;
+  border-radius: 10px;
+}
+.items-row::-webkit-scrollbar-thumb {
+  background-color: #606060;
+  border-radius: 50px;
+ 
+}
+
+@keyframes slow{
+  from{
+    margin-top: 0;
+  }
+  to{
+    margin-top: 20px;
+  }
+}
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  min-width: 150px;
+  min-height: 100px;
+
+}
+
+.start {
+  background-color: #229efd;
+}
+
+.progress {
+  background: #FF7400	;
+}
+
+.done {
+  background: #00CC00;
+}
+
+
+.hold{
+  color: #f3f3f3;
+  background-color: #333;
+ 
+}
+
+.hide{
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.dropHere{
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.inner_btn{
+font-size: 25px;
+color: #f3f3f3;
+}
+.inner_btn:hover{
+  cursor: pointer;
+}
+
+.btn-delete.placeholder{
+  min-width: 50px;
+  min-height: 10px;
+}
+
+.btn-zone{
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  align-items: center;
+
+
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+.fa-plus{
+  margin-left: 40px;
+}
+.fa-plus:hover{
+  cursor: pointer;
+}
+input {
+  border: none;
+  padding: 10px 10px;
+  color: #727272;
+  font-size: 20px;
+  vertical-align: baseline;
+  border-radius: 10px;
+}
+input:focus {
+  outline: none;
+}
+
+.inputPlace{
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+.fa-trash-alt{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
